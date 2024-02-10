@@ -266,7 +266,7 @@ model.summary()
 
 model.compile(optimizer=Adam(learning_rate=0.0001), loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-model.fit(x= X_train_DL, y= Y_train_DL, batch_size = 10, epochs = 10,
+model.fit(x= X_train_DL, y= Y_train_DL, batch_size = 10, epochs = 50,
           shuffle = True, verbose = 2, validation_split = 0.1)
 
 predictions = model.predict(x= X_test_DL, batch_size = 10, verbose = 0)
